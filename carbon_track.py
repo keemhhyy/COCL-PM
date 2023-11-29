@@ -13,7 +13,7 @@ import time
 
 class CarbonTrack:
     def __init__(self):
-        self.fm = FirebaseManager() # firebase 연결 완료
+        self.fm = FirebaseManager() # firebase connection completed
         self.gpu_info = GPUInfo(gpu_id=0)
         if platform.machine() == "aarch64" or platform.machine() == "arm64":
             self.gpu_info.gpu_name = "macOS M1 GPU"
@@ -55,4 +55,4 @@ if __name__ == "__main__":
     ct = CarbonTrack()
     while True:
         ct.collect()
-        time.sleep(60) # 1분마다 데이터 수집
+        time.sleep(60) # Collect data every minute

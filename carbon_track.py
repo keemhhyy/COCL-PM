@@ -1,5 +1,5 @@
 """
-Real_time database와 연동
+Integration with Real_time database
 """
 
 from carbon_api import carbon_intensity
